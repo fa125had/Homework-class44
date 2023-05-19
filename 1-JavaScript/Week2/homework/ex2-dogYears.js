@@ -16,8 +16,12 @@ calculate it!
    ages.
 -----------------------------------------------------------------------------*/
 
-function calculateDogAge(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function calculateDogAge(dogAge) {
+  if (!dogAge || typeof dogAge !== 'number') {
+    throw Error('Invalid dog age, Please insert your dog age in a Number between 1 to 80.');
+  } else {
+    return `Your doggie is ${dogAge * 7} years old in dog years!`;
+  }
 }
 
 function main() {
