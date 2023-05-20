@@ -40,10 +40,9 @@ function giveCompliment(name) {
 
 function main() {
   const myName = 'Farshad';
-
-  console.log(giveCompliment(myName));
-  console.log(giveCompliment(myName));
-  console.log(giveCompliment(myName));
+  for (let i = 0; i < 3; i++) {
+    console.log(giveCompliment(myName));
+  }
 }
 
 // ! Do not change or remove the code below

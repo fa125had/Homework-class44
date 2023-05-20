@@ -30,7 +30,7 @@ const cartForParty = {
 
 function calculateTotalPrice(shoppingList) {
   let totalPrice = 0.0;
-  // collect item's title 
+  // collect item's title
   const itemKeys = Object.keys(shoppingList);
 
   for (const key of itemKeys) {
@@ -52,7 +52,6 @@ function test2() {
   const expected = 'Total: €47.9';
   const actual = calculateTotalPrice(cartForParty);
   console.assert(actual === expected);
-
 }
 
 function test() {

@@ -23,7 +23,7 @@ function addToShoppingCart(shoppingCart, newItem) {
   newItem ? updatedShoppingCart.push(newItem) : null;
   // check if new shopping cart items are more than 3 items or not, if yes first item will be removed
   updatedShoppingCart.length > 3 ? updatedShoppingCart.shift() : null;
-  // Return final shopping cart 
+  // Return final shopping cart
   return updatedShoppingCart;
 }
 

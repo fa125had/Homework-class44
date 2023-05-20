@@ -63,9 +63,9 @@ function main() {
     'Front-end developer',
   ];
 
-  console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
-  console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
-  console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
+  for (let i = 0; i < 3; i++) {
+    console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
+  }
 }
 
 // ! Do not change or remove the code below

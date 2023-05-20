@@ -18,16 +18,18 @@ calculate it!
 
 function calculateDogAge(dogAge) {
   if (!dogAge || typeof dogAge !== 'number') {
-    throw Error('Invalid dog age, Please insert your dog age in a Number between 1 to 80.');
+    throw Error(
+      'Invalid dog age, Please insert your dog age in a Number between 1 to 80.'
+    );
   } else {
     return `Your doggie is ${dogAge * 7} years old in dog years!`;
   }
 }
 
 function main() {
-  console.log(calculateDogAge(1)); // -> "Your doggie is 7 years old in dog years!"
-  console.log(calculateDogAge(2)); // -> "Your doggie is 14 years old in dog years!"
-  console.log(calculateDogAge(3)); // -> "Your doggie is 21 years old in dog years!"
+  for (let i = 0; i < 3; i++) {
+    console.log(calculateDogAge(i + 1));
+  }
 }
 
 // ! Do not change or remove the code below

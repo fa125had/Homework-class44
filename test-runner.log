@@ -184,3 +184,24 @@ Browserslist: caniuse-lite is outdated. Please run:
 2023-05-19 02:30:28 error: *** Spell Checker Report ***
 
 
+2023-05-20 10:13:05 info: ----------------------------------------------
+2023-05-20 10:13:05 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-05-20 10:13:05 info: ----------------------------------------------
+2023-05-20 10:13:08 info: All unit tests passed.
+2023-05-20 10:13:11 error: *** Spell Checker Report ***
+
+
+2023-05-20 10:13:22 info: ----------------------------------------
+2023-05-20 10:13:22 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-05-20 10:13:22 info: ----------------------------------------
+2023-05-20 10:13:24 info: All unit tests passed.
+2023-05-20 10:13:26 error: *** Spell Checker Report ***
+
+
+2023-05-20 10:15:47 info: -------------------------------------------
+2023-05-20 10:15:47 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-05-20 10:15:47 info: -------------------------------------------
+2023-05-20 10:15:50 info: All unit tests passed.
+2023-05-20 10:15:53 error: *** Spell Checker Report ***
+
+
