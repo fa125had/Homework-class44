@@ -34,8 +34,8 @@ function giveCompliment(name) {
     'magnificent',
     'remarkable',
   ];
-  const randomIndex = Math.floor(Math.random() * compliments.length);
-  return `You are ${compliments[randomIndex]}, ${name}!`;
+  const compliment = compliments[Math.floor(Math.random() * compliments.length)];
+  return `You are ${compliment}, ${name}!`;
 }
 
 function main() {
