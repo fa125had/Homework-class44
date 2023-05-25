@@ -43,8 +43,8 @@ function tellFortune(numKids, partnerNames, locations, jobTitles) {
   const partnerName = selectRandomly(partnerNames);
   const location = selectRandomly(locations);
   const jobTitle = selectRandomly(jobTitles);
-
-  return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numberOfKids} kids.`;
+  const yourFuture = `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numberOfKids} kids.`;
+  return yourFuture;
 }
 
 function main() {
