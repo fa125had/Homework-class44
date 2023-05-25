@@ -25,11 +25,14 @@ const shoppingCart = ['bananas', 'milk'];
 // ! Function to be tested
 function addToShoppingCart(newItem) {
   // check if new item provided or not, if yes it will add to the shopping cart
-  newItem ? shoppingCart.push(newItem) : null;
-  // check if shopping cart items are more than 3 items or not, if yes first item will be removed
-  shoppingCart.length > 3 ? shoppingCart.shift() : null;
+  // then check if shopping cart items are more than 3 items or not, if yes first item will be removed
   // final shopping cart list, separated with comma
-  return `You bought ${shoppingCart.join(', ')}!`;
+  return newItem
+    ? (shoppingCart.push(newItem),
+      shoppingCart.length > 3
+        ? (shoppingCart.shift(), `You bought ${shoppingCart.join(', ')}!`)
+        : `You bought ${shoppingCart.join(', ')}!`)
+    : `You bought ${shoppingCart.join(', ')}!`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
