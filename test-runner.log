@@ -247,3 +247,147 @@ Browserslist: caniuse-lite is outdated. Please run:
 2023-05-21 10:47:25 info: -------------------------------------------
 2023-05-21 10:47:25 warn: A unit test file was not provided.
 2023-05-21 10:47:28 info: All steps were completed successfully
+2023-05-29 04:45:29 info: ------------------------------------------------------
+2023-05-29 04:45:29 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-05-29 04:45:29 info: ------------------------------------------------------
+2023-05-29 04:45:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (12 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+    +   2,
+        4,
+    -   8,
+      ]
+
+      21 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      22 |   const expected = [4, 8];
+    > 23 |   expect(actual).toEqual(expected);
+         |                  ^
+      24 | });
+      25 |
+
+      at Object.toEqual (1-JavaScript/Week3/homework/ex1-doubleEvenNumbers.test.js:23:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.682 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2023-05-29 04:47:15 info: ------------------------------------------------------
+2023-05-29 04:47:15 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-05-29 04:47:15 info: ------------------------------------------------------
+2023-05-29 04:47:17 info: All unit tests passed.
+2023-05-29 04:47:20 info: All steps were completed successfully
+2023-05-29 04:59:40 info: -------------------------------------------------
+2023-05-29 04:59:40 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-29 04:59:40 info: -------------------------------------------------
+2023-05-29 04:59:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✕ should take two parameters (4 ms)
+    ✕ should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   1
+    Received function: [Function computeEarnings]
+
+      43 |     // The `.length` property indicates the number of parameters expected by
+      44 |     // the function.
+    > 45 |     expect(computeEarnings).toHaveLength(2);
+         |                             ^
+      46 |   });
+      47 |
+      48 |   test('should compute the earnings as a formatted Euro amount', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:45:29)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: undefined
+
+      49 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      50 |     const expected = '€187.50';
+    > 51 |     expect(result).toBe(expected);
+         |                    ^
+      52 |   });
+      53 | });
+      54 |
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:51:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 total
+Snapshots:   0 total
+Time:        0.682 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-05-29 05:14:19 info: -------------------------------------------------
+2023-05-29 05:14:19 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-29 05:14:19 info: -------------------------------------------------
+2023-05-29 05:14:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      53 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      54 |     const expected = '€187.50';
+    > 55 |     expect(result).toBe(expected);
+         |                    ^
+      56 |   });
+      57 | });
+      58 |
+
+      at Object.toBe (1-JavaScript/Week3/homework/ex2-mondaysWorth.test.js:55:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.659 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-05-29 05:15:09 info: -------------------------------------------------
+2023-05-29 05:15:09 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-29 05:15:09 info: -------------------------------------------------
+2023-05-29 05:15:12 info: All unit tests passed.
+2023-05-29 05:15:16 info: All steps were completed successfully
+2023-05-29 05:23:44 info: -------------------------------------------------
+2023-05-29 05:23:44 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-05-29 05:23:44 info: -------------------------------------------------
+2023-05-29 05:23:46 info: All unit tests passed.
+2023-05-29 05:23:50 info: All steps were completed successfully
