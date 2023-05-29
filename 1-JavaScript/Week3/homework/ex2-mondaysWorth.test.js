@@ -50,7 +50,6 @@ function computeEarnings(tasks, rate) {
   return `€${totalEarning.toFixed(2)}`;
 }
 
-computeEarnings(mondayTasks);
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
   test('should take two parameters', () => {
