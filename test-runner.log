@@ -831,3 +831,56 @@ Ran all test suites matching /ex3-lemonAllergy.test.js/i.
 2023-05-29 06:43:48 info: -------------------------------------------------
 2023-05-29 06:43:50 info: All unit tests passed.
 2023-05-29 06:43:54 info: All steps were completed successfully
+2023-05-29 07:05:02 info: ------------------------------------------
+2023-05-29 07:05:02 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-29 07:05:02 info: ------------------------------------------
+2023-05-29 07:05:05 info: All unit tests passed.
+2023-05-29 07:05:09 info: All steps were completed successfully
+2023-05-29 07:09:11 info: ------------------------------------------
+2023-05-29 07:09:11 info: >>> Running Unit Test `ex4-observable` <<<
+2023-05-29 07:09:11 info: ------------------------------------------
+2023-05-29 07:09:13 info: All unit tests passed.
+2023-05-29 07:09:17 info: All steps were completed successfully
+2023-05-29 07:32:32 info: --------------------------------------
+2023-05-29 07:32:32 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-05-29 07:32:32 info: --------------------------------------
+2023-05-29 07:32:36 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/admin/Documents/web-projects/HYF/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-29 10:18:48 info: --------------------------------------
+2023-05-29 10:18:48 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-05-29 10:18:48 info: --------------------------------------
+2023-05-29 10:18:50 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/admin/Documents/web-projects/HYF/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-29 10:34:16 info: --------------------------------------
+2023-05-29 10:34:16 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-05-29 10:34:16 info: --------------------------------------
+2023-05-29 10:34:18 error: *** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/admin/Documents/web-projects/HYF/Homework-class44/test-runner/CustomReporter.js"
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+2023-05-30 10:56:17 info: --------------------------------------
+2023-05-30 10:56:18 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-05-30 10:56:18 info: --------------------------------------
+2023-05-30 10:56:20 info: All unit tests passed.
+2023-05-30 10:56:24 info: All steps were completed successfully

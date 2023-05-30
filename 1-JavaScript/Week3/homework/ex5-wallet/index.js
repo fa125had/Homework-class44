@@ -24,9 +24,9 @@ function createWallet(name, cash = 0) {
 
   function transferInto(wallet, amount) {
     console.log(
-      `Transferring ${eurosFormatter.format(amount)} from ${name} to ${
-        wallet.name
-      }`
+      `Transferring ${eurosFormatter.format(
+        amount
+      )} from ${name} to ${wallet.getName()}`
     );
     const withdrawnAmount = withdraw(amount);
     wallet.deposit(withdrawnAmount);
@@ -104,7 +104,7 @@ const quiz = {
       b: 'Transferring € 50,00 from Jack to undefined', 
       c: 'Transferring € 50,00 from Jack to Jane' 
     },
-    answer: 'b',
+    answer: 'a',
   },
   q5: {
     question: 'The owner of the wallet with insufficient funds is:',
