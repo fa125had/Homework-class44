@@ -884,3 +884,216 @@ Browserslist: caniuse-lite is outdated. Please run:
 2023-05-30 10:56:18 info: --------------------------------------
 2023-05-30 10:56:20 info: All unit tests passed.
 2023-05-30 10:56:24 info: All steps were completed successfully
+2023-06-09 11:17:56 info: --------------------------------------------
+2023-06-09 11:17:56 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-06-09 11:17:56 info: --------------------------------------------
+2023-06-09 11:17:56 warn: A unit test file was not provided.
+2023-06-09 11:18:02 info: All steps were completed successfully
+2023-06-09 07:10:44 info: ----------------------------------------
+2023-06-09 07:10:44 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-09 07:10:44 info: ----------------------------------------
+2023-06-09 07:10:51 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (160 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      16:13  error  \"type\" attribute is unnecessary for javascript resources  script-type·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        3.852 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-09 07:14:03 info: ----------------------------------------
+2023-06-09 07:14:03 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-09 07:14:03 info: ----------------------------------------
+2023-06-09 07:14:08 info: All unit tests passed.
+2023-06-09 07:14:12 info: All steps were completed successfully
+2023-06-09 08:52:51 info: ----------------------------------------
+2023-06-09 08:52:51 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-09 08:52:51 info: ----------------------------------------
+2023-06-09 08:52:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (177 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    ✕ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✕ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      14:227   error  <button> is missing required \"type\" attribute  element-required-attributes
+      14:440   error  <button> is missing required \"type\" attribute  element-required-attributes
+      14:665   error  <button> is missing required \"type\" attribute  element-required-attributes
+      14:877   error  <button> is missing required \"type\" attribute  element-required-attributes
+      14:1024  error  <button> is missing required \"type\" attribute  element-required-attributes
+      14:1226  error  <button> is missing required \"type\" attribute  element-required-attributes
+      14:1423  error  <button> is missing required \"type\" attribute  element-required-attributes
+      14:1679  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 8 problems (8 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 8
+
+      52 |     const nodeList = document.querySelectorAll('ul > li');
+      53 |     const result = nodeList ? nodeList.length : 0;
+    > 54 |     expect(result).toBe(3);
+         |                    ^
+      55 |   });
+      56 |
+      57 |   test('should contain an <li> with title and author for each book of the `myBooks` array', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:54:20)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 8
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 passed, 6 total
+Snapshots:   0 total
+Time:        3.902 s, estimated 4 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-09 09:01:47 info: ----------------------------------------
+2023-06-09 09:01:47 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-09 09:01:47 info: ----------------------------------------
+2023-06-09 09:01:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (151 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    ✕ should contain a <ul> with 3 <li> elements (8 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✕ should contain an <img> element for each book (6 ms)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 8
+
+      52 |     const nodeList = document.querySelectorAll('ul > li');
+      53 |     const result = nodeList ? nodeList.length : 0;
+    > 54 |     expect(result).toBe(3);
+         |                    ^
+      55 |   });
+      56 |
+      57 |   test('should contain an <li> with title and author for each book of the `myBooks` array', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:54:20)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 8
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        3.912 s, estimated 4 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-06-09 09:03:08 info: ----------------------------------------
+2023-06-09 09:03:08 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-09 09:03:08 info: ----------------------------------------
+2023-06-09 09:03:14 info: All unit tests passed.
+2023-06-09 09:03:20 info: All steps were completed successfully
+2023-06-09 09:04:35 info: ----------------------------------------
+2023-06-09 09:04:35 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-09 09:04:35 info: ----------------------------------------
+2023-06-09 09:04:42 info: All unit tests passed.
+2023-06-09 09:04:49 info: All steps were completed successfully
+2023-06-09 10:00:05 info: ----------------------------------------
+2023-06-09 10:00:05 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-09 10:00:05 info: ----------------------------------------
+2023-06-09 10:00:12 info: All unit tests passed.
+2023-06-09 10:00:16 info: All steps were completed successfully
