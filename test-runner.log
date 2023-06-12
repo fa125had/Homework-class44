@@ -1097,3 +1097,219 @@ Ran all test suites matching /ex1-bookList.test.js/i.
 2023-06-09 10:00:05 info: ----------------------------------------
 2023-06-09 10:00:12 info: All unit tests passed.
 2023-06-09 10:00:16 info: All steps were completed successfully
+2023-06-10 02:44:46 info: ----------------------------------------
+2023-06-10 02:44:46 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-10 02:44:46 info: ----------------------------------------
+2023-06-10 02:44:51 info: All unit tests passed.
+2023-06-10 02:44:56 info: All steps were completed successfully
+2023-06-10 02:45:48 info: ----------------------------------------
+2023-06-10 02:45:48 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-10 02:45:48 info: ----------------------------------------
+2023-06-10 02:45:53 info: All unit tests passed.
+2023-06-10 02:45:56 info: All steps were completed successfully
+2023-06-10 03:00:35 info: ---------------------------------------
+2023-06-10 03:00:35 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-10 03:00:35 info: ---------------------------------------
+2023-06-10 03:00:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (143 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ each <li> should have the CSS class `list-item` (2 ms)
+    ✕ each <li> should rendered red (35 ms)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      26 |     const nodeList = document.querySelectorAll('li');
+      27 |     const classNames = [...nodeList].map((node) => node.className);
+    > 28 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      29 |   });
+      30 |
+      31 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:28:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      34 |       (node) => window.getComputedStyle(node).color
+      35 |     );
+    > 36 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      37 |   });
+      38 | });
+      39 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:36:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 passed, 4 total
+Snapshots:   0 total
+Time:        3.757 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-06-10 03:00:46 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:17:32 - Unknown word (Ghormeh)
+ex2-aboutMe/index.js:17:40 - Unknown word (Sabzi)
+
+2023-06-10 03:02:20 info: ---------------------------------------
+2023-06-10 03:02:20 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-10 03:02:20 info: ---------------------------------------
+2023-06-10 03:02:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (128 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ each <li> should have the CSS class `list-item` (2 ms)
+    ✕ each <li> should rendered red (34 ms)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      26 |     const nodeList = document.querySelectorAll('li');
+      27 |     const classNames = [...nodeList].map((node) => node.className);
+    > 28 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      29 |   });
+      30 |
+      31 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:28:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      34 |       (node) => window.getComputedStyle(node).color
+      35 |     );
+    > 36 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      37 |   });
+      38 | });
+      39 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:36:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 passed, 4 total
+Snapshots:   0 total
+Time:        3.55 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-06-10 03:03:21 info: ---------------------------------------
+2023-06-10 03:03:21 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-10 03:03:21 info: ---------------------------------------
+2023-06-10 03:03:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (187 ms)
+    ✓ should have all TODO comments removed
+    ✕ each <li> should have the CSS class `list-item` (2 ms)
+    ✕ each <li> should rendered red (38 ms)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      26 |     const nodeList = document.querySelectorAll('li');
+      27 |     const classNames = [...nodeList].map((node) => node.className);
+    > 28 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      29 |   });
+      30 |
+      31 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:28:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      34 |       (node) => window.getComputedStyle(node).color
+      35 |     );
+    > 36 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      37 |   });
+      38 | });
+      39 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:36:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 passed, 4 total
+Snapshots:   0 total
+Time:        3.492 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-06-10 03:06:35 info: ---------------------------------------
+2023-06-10 03:06:35 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-10 03:06:35 info: ---------------------------------------
+2023-06-10 03:06:41 info: All unit tests passed.
+2023-06-10 03:06:45 info: All steps were completed successfully
+2023-06-10 03:06:52 info: ---------------------------------------
+2023-06-10 03:06:52 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-10 03:06:52 info: ---------------------------------------
+2023-06-10 03:06:56 info: All unit tests passed.
+2023-06-10 03:07:00 info: All steps were completed successfully
+2023-06-10 03:13:46 info: ----------------------------------------
+2023-06-10 03:13:46 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-06-10 03:13:46 info: ----------------------------------------
+2023-06-10 03:13:52 info: All unit tests passed.
+2023-06-10 03:13:56 info: All steps were completed successfully
+2023-06-10 03:14:23 info: ---------------------------------------
+2023-06-10 03:14:23 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-06-10 03:14:23 info: ---------------------------------------
+2023-06-10 03:14:29 info: All unit tests passed.
+2023-06-10 03:14:33 info: All steps were completed successfully
+2023-06-12 11:42:01 info: ------------------------------------------
+2023-06-12 11:42:01 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-12 11:42:01 info: ------------------------------------------
+2023-06-12 11:42:04 info: All unit tests passed.
+2023-06-12 11:42:09 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:16:24 - Unknown word (googlelogo)
+
+2023-06-12 11:43:43 info: ------------------------------------------
+2023-06-12 11:43:43 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-12 11:43:43 info: ------------------------------------------
+2023-06-12 11:43:47 info: All unit tests passed.
+2023-06-12 11:43:51 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:16:26 - Unknown word (googlelogo)
+ex3-hijackLogo.js:17:16 - Unknown word (HYF's)
+
+2023-06-12 11:46:20 info: ------------------------------------------
+2023-06-12 11:46:21 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-06-12 11:46:21 info: ------------------------------------------
+2023-06-12 11:46:23 info: All unit tests passed.
+2023-06-12 11:46:27 info: All steps were completed successfully
