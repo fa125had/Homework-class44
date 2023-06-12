@@ -1313,3 +1313,148 @@ ex3-hijackLogo.js:17:16 - Unknown word (HYF's)
 2023-06-12 11:46:21 info: ------------------------------------------
 2023-06-12 11:46:23 info: All unit tests passed.
 2023-06-12 11:46:27 info: All steps were completed successfully
+2023-06-12 01:08:25 info: --------------------------------------------
+2023-06-12 01:08:25 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-12 01:08:25 info: --------------------------------------------
+2023-06-12 01:08:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.799 s)
+  whatsTheTime
+    ✕ HTML should be syntactically valid (135 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2007 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <h1> cannot be empty, must have text content  empty-heading·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:47:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.886 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-06-12 01:10:18 info: --------------------------------------------
+2023-06-12 01:10:18 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-12 01:10:18 info: --------------------------------------------
+2023-06-12 01:10:26 info: All unit tests passed.
+2023-06-12 01:10:29 info: All steps were completed successfully
+2023-06-12 01:13:29 info: --------------------------------------------
+2023-06-12 01:13:29 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-12 01:13:29 info: --------------------------------------------
+2023-06-12 01:13:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.608 s)
+  whatsTheTime
+    ✕ HTML should be syntactically valid (143 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2006 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <h1> cannot be empty, must have text content  empty-heading·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:47:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.687 s, estimated 6 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-06-12 01:14:23 info: --------------------------------------------
+2023-06-12 01:14:23 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-12 01:14:23 info: --------------------------------------------
+2023-06-12 01:14:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.558 s)
+  whatsTheTime
+    ✕ HTML should be syntactically valid (131 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2007 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <h2> cannot be empty, must have text content  empty-heading·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:47:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.641 s, estimated 6 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-06-12 01:14:56 info: --------------------------------------------
+2023-06-12 01:14:56 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-06-12 01:14:56 info: --------------------------------------------
+2023-06-12 01:15:04 info: All unit tests passed.
+2023-06-12 01:15:08 info: All steps were completed successfully
