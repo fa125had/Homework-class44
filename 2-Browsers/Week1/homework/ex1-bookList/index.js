@@ -21,6 +21,7 @@ function createBookList(books) {
   // Select bookList div element and create an nested ul
   const bookListContainer = document.getElementById('bookList');
   const bookList = document.createElement('ul');
+  // Added books class
   bookList.classList.add('books');
   bookListContainer.appendChild(bookList);
   // Iterate for each book and create li, title and image for that
@@ -28,7 +29,7 @@ function createBookList(books) {
     const listItem = document.createElement('li');
     const bookTitle = document.createElement('p');
     bookTitle.textContent = `${title} by ${author}`;
-    // Check and set background color ad green if already read or red for not yet read books
+    // Check and set background color green if already read or red for not yet read books
     alreadyRead
       ? (bookTitle.style.backgroundColor = 'green')
       : (bookTitle.style.backgroundColor = 'red');

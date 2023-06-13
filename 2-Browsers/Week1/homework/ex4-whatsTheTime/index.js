@@ -11,14 +11,14 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 let intervalId = 0;
 
 function addCurrentTime() {
-  // Created a h1 element and added to the body for showing time
+  // Created a p element and added to the body for showing time
   const timeElement = document.createElement('p');
   document.body.appendChild(timeElement);
-  // Set 1s interval
+  // Set 1sec interval for refresh the time in DOM
   intervalId = setInterval(() => {
     // Get current Date with HH:MM:SS format
     const currentTime = new Date().toLocaleTimeString();
-    // Set h1 element's content
+    // Set p element's content with current time
     timeElement.textContent = currentTime;
   }, 1000);
 }
