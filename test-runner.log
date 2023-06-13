@@ -1458,3 +1458,8 @@ Ran all test suites matching /ex4-whatsTheTime.test.js/i.
 2023-06-12 01:14:56 info: --------------------------------------------
 2023-06-12 01:15:04 info: All unit tests passed.
 2023-06-12 01:15:08 info: All steps were completed successfully
+2023-06-13 02:36:39 info: ---------------------------------------
+2023-06-13 02:36:39 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-06-13 02:36:39 info: ---------------------------------------
+2023-06-13 02:36:45 info: All unit tests passed.
+2023-06-13 02:36:50 info: All steps were completed successfully

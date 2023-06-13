@@ -22,7 +22,56 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 function catWalk() {
-  // TODO complete this function
+  const catImage = document.querySelector('img');
+  const primaryImageSource = catImage.src;
+  const secondaryImageSource =
+    'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+  // Walking speed
+  const stepSize = 10;
+  // Moving left to right interval
+  const walkInterval = 50;
+  // Dancing timeout
+  const imageSwitchDelay = 5000;
+  // Img left position tracker
+  let currentPosition = 0;
+  catImage.style.left = `${currentPosition}px`;
+  // Calculate center of screen, base on img width, screen width and current location
+  const maxWidth = window.innerWidth;
+  const isScreenCenter = () =>
+    Math.abs(currentPosition - (maxWidth - catImage.width) / 2) < 10;
+  // Reset img left position to 0
+  const resetPosition = () => {
+    currentPosition = 0;
+  };
+  const setCatImage = (src) => (catImage.src = src);
+
+  const resetImageSource = () => {
+    setCatImage(primaryImageSource);
+    currentPosition += stepSize;
+    catImage.style.left = `${currentPosition}px`;
+    startWalking();
+  };
+
+  const startWalking = () => {
+    const intervalId = setInterval(() => {
+      if (currentPosition > maxWidth) {
+        resetPosition();
+      }
+
+      if (isScreenCenter()) {
+        clearInterval(intervalId);
+        setCatImage(secondaryImageSource);
+        setTimeout(() => {
+          resetImageSource();
+        }, imageSwitchDelay);
+      } else {
+        currentPosition += stepSize;
+        catImage.style.left = `${currentPosition}px`;
+      }
+    }, walkInterval);
+  };
+
+  startWalking();
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.onload = catWalk;
