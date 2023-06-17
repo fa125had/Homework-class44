@@ -17,9 +17,11 @@ function addCurrentTime() {
   // Set 1sec interval for refresh the time in DOM
   intervalId = setInterval(() => {
     // Get current Date with HH:MM:SS format
-    const currentTime = new Date().toLocaleTimeString();
+    const currentTime = new Date().toLocaleTimeString('nl-NL');
     // Set p element's content with current time
     timeElement.textContent = currentTime;
+    // Log current time to console
+    console.log(timeElement.textContent)
   }, 1000);
 }
 
