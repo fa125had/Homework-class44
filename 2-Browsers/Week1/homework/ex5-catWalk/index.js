@@ -49,13 +49,6 @@ function catWalk() {
   };
   // Toggle between SRCs
   const setCatImage = (src) => (catImage.src = src);
-  // Reset SRC to primary and start walking to the right till end of the screen
-  const resetImageSource = () => {
-    setCatImage(primaryImageSource);
-    currentPosition += stepSize;
-    catImage.style.left = `${currentPosition}px`;
-    startWalking();
-  };
 
   const startWalking = () => {
     const intervalId = setInterval(() => {
@@ -69,7 +62,9 @@ function catWalk() {
         setCatImage(secondaryImageSource);
         // Waiting for her to finish the party
         setTimeout(() => {
-          resetImageSource();
+          setCatImage(primaryImageSource);
+          currentPosition += stepSize;
+          startWalking();
         }, imageSwitchDelay);
         // Handle walking to/from center of screen
       } else {
