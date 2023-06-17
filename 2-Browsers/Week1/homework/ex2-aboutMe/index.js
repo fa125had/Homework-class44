@@ -16,11 +16,11 @@ listItems.forEach((listItem) => {
   // Add list-item class to parent of each span tag which is a li tag
   listItem.parentElement.classList.add('list-item');
   // Check id of selected li and assign proper value
-  listItem.id === 'nickname'
-    ? (listItem.textContent = 'Farshad')
-    : listItem.id === 'fav-food'
-    ? (listItem.textContent = 'Pizza')
-    : listItem.id === 'hometown'
-    ? (listItem.textContent = 'Amsterdam')
-    : null;
+  if (listItem.id === 'nickname') {
+    listItem.textContent = 'Farshad';
+  } else if (listItem.id === 'fav-food') {
+    listItem.textContent = 'Pizza';
+  } else if (listItem.id === 'hometown') {
+    listItem.textContent = 'Amsterdam';
+  }
 });
