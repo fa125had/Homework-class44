@@ -66,12 +66,11 @@ function catWalk() {
           currentPosition += stepSize;
           startWalking();
         }, imageSwitchDelay);
-        // Handle walking to/from center of screen
-      } else {
-        currentPosition += stepSize;
-        catImage.style.left = `${currentPosition}px`;
       }
-    }, walkInterval);
+      // Handle walking to/from center of screen
+      currentPosition += stepSize;
+      catImage.style.left = `${currentPosition}px`;
+    }, walkInterval)
   };
 
   startWalking();
