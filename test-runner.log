@@ -1,0 +1,443 @@
+2023-07-11 10:46:05 info: ---------------------------------------------
+2023-07-11 10:46:05 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-11 10:46:05 info: ---------------------------------------------
+2023-07-11 10:46:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✕ HTML should be syntactically valid (129 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()` (1 ms)
+    ✕ should use async/wait
+    ✓ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      8:6  error  <dvi> is not a valid element name  element-name·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+  ● programmerFun › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      52 |
+      53 |   test('should use async/wait', () => {
+    > 54 |     expect(state.async).toBeDefined();
+         |                         ^
+      55 |     expect(state.await).toBeDefined();
+      56 |   });
+      57 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:54:25)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        3.756 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2023-07-11 10:51:59 info: ---------------------------------------------
+2023-07-11 10:51:59 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-11 10:51:59 info: ---------------------------------------------
+2023-07-11 10:52:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✕ HTML should be syntactically valid (130 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()` (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch (1 ms)
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      8:6  error  <dvi> is not a valid element name  element-name·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.465 s, estimated 4 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2023-07-11 10:54:30 info: ---------------------------------------------
+2023-07-11 10:54:30 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-11 10:54:30 info: ---------------------------------------------
+2023-07-11 10:54:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✕ HTML should be syntactically valid (138 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()` (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch (1 ms)
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      8:6  error  <dvi> is not a valid element name  element-name·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.721 s, estimated 4 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2023-07-11 10:55:40 info: ---------------------------------------------
+2023-07-11 10:55:40 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-07-11 10:55:40 info: ---------------------------------------------
+2023-07-11 10:55:46 info: All unit tests passed.
+2023-07-11 10:55:51 info: All steps were completed successfully
+2023-07-11 11:52:17 info: ------------------------------------------
+2023-07-11 11:52:17 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-11 11:52:17 info: ------------------------------------------
+2023-07-11 11:52:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (133 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()` (1 ms)
+    ✓ should use `await fetch()`
+    ✓ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2   error  <button> is missing required \"type\" attribute  element-required-attributes
+      12:49  error  <img> is missing required \"src\" attribute      element-required-attributes
+      12:49  error  <img> is missing required \"alt\" attribute      wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.668 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-07-11 11:55:29 info: ------------------------------------------
+2023-07-11 11:55:29 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-11 11:55:29 info: ------------------------------------------
+2023-07-11 11:55:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (142 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()` (1 ms)
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:63  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:63  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.502 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-07-11 11:59:13 info: ------------------------------------------
+2023-07-11 11:59:13 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-11 11:59:13 info: ------------------------------------------
+2023-07-11 11:59:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (237 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()` (1 ms)
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:63  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:63  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.754 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-07-12 12:01:35 info: ------------------------------------------
+2023-07-12 12:01:35 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-12 12:01:35 info: ------------------------------------------
+2023-07-12 12:01:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (387 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()` (1 ms)
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:63  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:63  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.958 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-07-12 12:03:34 info: ------------------------------------------
+2023-07-12 12:03:34 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-07-12 12:03:34 info: ------------------------------------------
+2023-07-12 12:03:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (182 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()` (1 ms)
+    ✓ should use `await fetch()`
+    ✓ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:63  error  Attribute \"src\" has invalid value \"\"  attribute-allowed-values·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.511 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-07-12 12:26:31 info: -----------------------------------------
+2023-07-12 12:26:31 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-07-12 12:26:31 info: -----------------------------------------
+2023-07-12 12:26:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✕ should have all TODO comments removed (3 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✓ should not include a recursive call (1 ms)
+    ✓ should use async/wait (1 ms)
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (22 ms)
+    ✓ should reject with an Error when a die rolls off the table (10 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.805 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-07-12 12:26:57 info: -----------------------------------------
+2023-07-12 12:26:57 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-07-12 12:26:57 info: -----------------------------------------
+2023-07-12 12:26:59 info: All unit tests passed.
+2023-07-12 12:27:07 info: All steps were completed successfully
+2023-07-12 12:29:17 info: ----------------------------------------
+2023-07-12 12:29:17 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-07-12 12:29:17 info: ----------------------------------------
+2023-07-12 12:29:19 info: All unit tests passed.
+2023-07-12 12:29:23 info: All steps were completed successfully
+2023-07-12 12:32:01 info: ----------------------------------------
+2023-07-12 12:32:01 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-07-12 12:32:01 info: ----------------------------------------
+2023-07-12 12:32:01 warn: A unit test file was not provided.
+2023-07-12 12:32:05 info: All steps were completed successfully
+2023-07-12 10:38:32 info: ----------------------------------------
+2023-07-12 10:38:32 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-07-12 10:38:32 info: ----------------------------------------
+2023-07-12 10:38:32 warn: A unit test file was not provided.
+2023-07-12 10:38:36 info: All steps were completed successfully
+2023-07-12 11:10:27 info: --------------------------------------------
+2023-07-12 11:10:27 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-07-12 11:10:27 info: --------------------------------------------
+2023-07-12 11:10:27 warn: A unit test file was not provided.
+2023-07-12 11:10:32 info: All steps were completed successfully
