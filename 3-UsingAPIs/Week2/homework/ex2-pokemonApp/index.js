@@ -78,20 +78,24 @@ async function fetchImage(url) {
 }
 
 async function main() {
-  await renderUi();
+  try {
+    await renderUi();
+    
+    const data = await fetchData(`https://pokeapi.co/api/v2/pokemon?limit=151`);
 
-  const data = await fetchData(`https://pokeapi.co/api/v2/pokemon?limit=151`);
+    const buttonElement = document.querySelector('button');
+    buttonElement.addEventListener('click', () => {
+      fetchAndPopulatePokemons(data);
+    });
 
-  const buttonElement = document.querySelector('button');
-  buttonElement.addEventListener('click', () => {
-    fetchAndPopulatePokemons(data);
-  });
-
-  const selectElement = document.querySelector('select');
-  selectElement.addEventListener('change', (event) => {
-    const selectedUrl = event.target.value;
-    fetchImage(selectedUrl);
-  });
+    const selectElement = document.querySelector('select');
+    selectElement.addEventListener('change', (event) => {
+      const selectedUrl = event.target.value;
+      fetchImage(selectedUrl);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', main);
