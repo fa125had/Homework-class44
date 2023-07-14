@@ -22,7 +22,7 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-const renderUi = () => {
+const renderUi = async () => {
   const ui = document.body;
   ui.style.display = 'flex';
   ui.style.flexDirection = 'column';
@@ -35,12 +35,9 @@ const renderUi = () => {
   button.textContent = 'Get Pokemons!';
 
   const select = document.createElement('select');
-  const image = document.createElement('img');
-  image.style.width = '250px';
 
   ui.appendChild(button);
   ui.appendChild(select);
-  ui.appendChild(image);
 };
 
 async function fetchData(endpoint) {
@@ -69,16 +66,19 @@ async function fetchAndPopulatePokemons(data) {
 async function fetchImage(url) {
   try {
     const data = await fetchData(url);
-    const imgElement = document.querySelector('img');
-    imgElement.src = data.sprites.front_default;
-    imgElement.alt = data.name;
+    const image = document.createElement('img');
+    image.setAttribute('src', data.sprites.front_default);
+    image.setAttribute('alt', data.name);
+    image.style.width = '250px';
+
+    document.body.appendChild(image);
   } catch (error) {
     console.log(error);
   }
 }
 
 async function main() {
-  renderUi();
+  await renderUi();
 
   const data = await fetchData(`https://pokeapi.co/api/v2/pokemon?limit=151`);
 
