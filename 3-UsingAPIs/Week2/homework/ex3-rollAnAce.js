@@ -26,7 +26,7 @@ async function main() {
     const result = await rollDieUntil('ACE');
     console.log('Resolved!', result);
   } catch (error) {
-    console.log('Rejected!', error);
+    console.log('Rejected!', error.message);
   }
 }
 

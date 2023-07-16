@@ -33,6 +33,7 @@ const requestData = async (url) => {
 const ui = document.getElementById('root');
 
 function renderImage(data) {
+  
   const banner = document.createElement('img');
   banner.setAttribute('src', data.img);
   banner.setAttribute('alt', data.alt);

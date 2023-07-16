@@ -1,1 +1,11 @@
-/* add your styling here */
+.user-interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.user-interface .pokemon-image {
+    max-width: 6em;
+}

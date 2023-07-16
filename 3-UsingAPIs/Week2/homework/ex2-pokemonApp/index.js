@@ -24,11 +24,7 @@ parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 const renderUi = async () => {
   const ui = document.body;
-  ui.style.display = 'flex';
-  ui.style.flexDirection = 'column';
-  ui.style.alignItems = 'center';
-  ui.style.justifyContent = 'center';
-  ui.style.gap = '10px';
+  ui.classList.add('user-interface');
 
   const button = document.createElement('button');
   button.setAttribute('type', 'button');
@@ -66,12 +62,22 @@ async function fetchAndPopulatePokemons(data) {
 async function fetchImage(url) {
   try {
     const data = await fetchData(url);
-    const image = document.createElement('img');
-    image.setAttribute('src', data.sprites.front_default);
-    image.setAttribute('alt', data.name);
-    image.style.width = '250px';
 
-    document.body.appendChild(image);
+    const pokemonImage = document.getElementById('pokemon-image');
+
+    // If the image is already in the DOM, update it
+    if (pokemonImage) {
+      pokemonImage.src = data.sprites.front_default;
+      pokemonImage.alt = data.name;
+    } else {
+      const pokemonImage = document.createElement('img');
+      pokemonImage.src = data.sprites.front_default;
+      pokemonImage.alt = data.name;
+      pokemonImage.id = 'pokemon-image';
+      pokemonImage.classList.add('pokemon-image');
+
+      document.body.appendChild(pokemonImage);
+    }
   } catch (error) {
     console.log(error);
   }
@@ -80,7 +86,7 @@ async function fetchImage(url) {
 async function main() {
   try {
     await renderUi();
-    
+
     const data = await fetchData(`https://pokeapi.co/api/v2/pokemon?limit=151`);
 
     const buttonElement = document.querySelector('button');
