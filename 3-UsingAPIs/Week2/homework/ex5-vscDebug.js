@@ -13,13 +13,11 @@ async function getData(url) {
 }
 
 function renderLaureate({ knownName, birth, death }) {
-  knownName ? console.log(`\nName: ${knownName.en}`) : null;
-  birth
-    ? console.log(`Birth: ${birth.date}, ${birth.place.locationString.en}`)
-    : null;
-  death
-    ? console.log(`Death: ${death.date}, ${death.place.locationString.en}`)
-    : null;
+  console.log(`\nName: ${knownName.en}`);
+  console.log(`Birth: ${birth.date}, ${birth.place.locationString.en}`);
+  if (death) {
+    console.log(`Death: ${death.date}, ${death.place.locationString.en}`);
+  }
 }
 
 function renderLaureates(laureates) {

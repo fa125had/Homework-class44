@@ -31,21 +31,20 @@ function addTableRow(table, label, value) {
 function renderLaureate(ul, { knownName, birth, death }) {
   const li = createAndAppend('li', ul);
   const table = createAndAppend('table', li);
-  knownName ? addTableRow(table, 'Name', knownName.en) : null;
-  birth
-    ? addTableRow(
-        table,
-        'Birth',
-        `${birth.date}, ${birth.place.locationString.en}`
-      )
-    : null;
-  death
-    ? addTableRow(
-        table,
-        'Death',
-        `${death.date}, ${death.place.locationString.en}`
-      )
-    : null;
+  
+  addTableRow(table, 'Name', knownName.en);
+  addTableRow(
+    table,
+    'Birth',
+    `${birth.date}, ${birth.place.locationString.en}`
+  );
+  if (death) {
+    addTableRow(
+      table,
+      'Death',
+      `${death.date}, ${death.place.locationString.en}`
+    );
+  }
 }
 
 function renderLaureates(laureates) {
