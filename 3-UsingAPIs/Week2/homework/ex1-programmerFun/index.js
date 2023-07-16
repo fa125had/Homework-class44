@@ -44,15 +44,15 @@ function renderImage(data) {
 
 function renderError(error) {
   const h1 = document.createElement('h1');
-  h1.textContent = error;
+  h1.textContent = error.message;
   ui.appendChild(h1);
 
-  console.log(error);
+  console.log(error.message);
 }
 
 async function main() {
   try {
-    const data = await requestData('https://xkcd.now.sh/?comic=latest');
+    const data = await requestData('https://xkcd.now.sh/?comic=latestr');
     renderImage(data);
   } catch (error) {
     renderError(error);
